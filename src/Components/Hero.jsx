@@ -61,7 +61,7 @@ export const Hero = () => {
             experiences. Whether you need a designer to mockup your next project
             and/or a developer to build it, <b>I can do both.</b> Clicking the
             Behance icon below will take you to my UI/UX portfolio website
-            showcasing some of my design work, case studies and resume.
+            showcasing some of my design work, case studies and design resume.
           </motion.p>
 
           <motion.div className="cta-buttons" variants={staggerContainer}>
@@ -82,7 +82,9 @@ export const Hero = () => {
               Contact Me
             </motion.a>
             <motion.a
-              href="#contact"
+              href="/Jean Richardson - Frontend Dev Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
