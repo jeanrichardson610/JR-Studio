@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,52 +19,48 @@ const staggerContainer = {
 };
 
 export const Projects = () => {
+  const [loadedImages, setLoadedImages] = useState({});
+  
   const projectData = [
     {
       title: "Learnora",
       img: "/projects/Learnora-project.png",
-      description:
-        "A modern Learning Management System (LMS) built with React, designed for an intuitive and engaging learning experience. Users can browse courses, view details, and navigate through a clean, responsive interface.",
+      description: "A modern Learning Management System (LMS) built with React...",
       link: "https://jeanrichardson610.github.io/Learnora/",
       tech: ["React", "TailwindCSS", "Vite"],
     },
     {
       title: "Reel-lax",
       img: "/projects/Reel-lax-project.png",
-      description:
-        "Reel-lax is a movie discovery platform that leverages The Movie Database (TMDb) API to provide users with trending movies, detailed information, and search functionalities.",
+      description: "Reel-lax is a movie discovery platform that leverages TMDb API...",
       link: "https://reel-lax.onrender.com/",
       tech: ["React", "TailwindCSS", "TMDB API"],
     },
     {
       title: "Sagittarius",
       img: "/projects/Sagittarius-project.png",
-      description:
-        "Sagittarius is a web-based chatbot application that emulates the functionality of Google's Gemini AI. Built with React and styled using CSS.",
+      description: "Sagittarius is a web-based chatbot application emulating Gemini AI...",
       link: "https://sagittarius-8sng.onrender.com/",
       tech: ["React", "Google Gemini API", "Vite"],
     },
     {
       title: "Summarist",
       img: "/projects/Summarist-project.jpg",
-      description:
-        "Summarist is a web application built with Next.js that leverages OpenAI's GPT-3 technology to generate concise, human-like summaries of books across various genres.",
+      description: "Summarist is a web app using GPT-3 to generate book summaries...",
       link: "https://summarist-kohl.vercel.app/",
       tech: ["React", "Next.js", "Express", "Firebase", "TailwindCSS", "OpenAI GPT-3", "Typescript"],
     },
     {
       title: "Gilded Spoon",
       img: "/projects/Gilded-Spoon-project.jpg",
-      description:
-        "Dining redefined with every bite — Gilded Spoon is a beautifully designed, responsive restaurant landing site built to showcase cuisine, chefs, and ambiance.",
+      description: "Dining redefined — Gilded Spoon is a responsive restaurant landing site...",
       link: "https://jeanrichardson610.github.io/Gilded-Spoon/",
       tech: ["HTML5", "CSS3", "Javascript"],
     },
     {
       title: "Goddess",
       img: "/projects/Goddess-project.jpg",
-      description:
-        "Goddess++ is a dynamic, responsive website designed to showcase the offerings of a premier women's fitness center. The platform highlights various services, products, and events.",
+      description: "Goddess++ is a dynamic site for a premier women's fitness center...",
       link: "https://jeanrichardson610.github.io/Goddess-/",
       tech: ["HTML5", "CSS3", "Javascript"],
     },
@@ -105,15 +102,28 @@ export const Projects = () => {
                 animate={inView ? "animate" : "initial"}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
               >
-                <div className="project-image overflow-hidden rounded-lg">
+                <div className="project-image relative overflow-hidden rounded-lg bg-gray-200">
+                  {/* Skeleton */}
+                  {!loadedImages[project.title] && (
+                    <div className="absolute inset-0 animate-pulse bg-gray-300" />
+                  )}
                   <motion.img
                     src={project.img}
                     alt={project.title}
                     loading="lazy"
                     whileHover={{ scale: 1.15 }}
                     className="w-full h-full object-cover"
+                    onLoad={() => {
+                      setTimeout(() => {
+                        setLoadedImages((prev) => ({
+                          ...prev,
+                          [project.title]: true,
+                        }));
+                      }, 1000); // 1-second delay
+                    }}
                   />
                 </div>
+
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <p>
