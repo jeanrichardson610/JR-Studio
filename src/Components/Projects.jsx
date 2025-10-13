@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -18,6 +18,57 @@ const staggerContainer = {
 };
 
 export const Projects = () => {
+  const projectData = [
+    {
+      title: "Learnora",
+      img: "/projects/Learnora-project.png",
+      description:
+        "A modern Learning Management System (LMS) built with React, designed for an intuitive and engaging learning experience. Users can browse courses, view details, and navigate through a clean, responsive interface.",
+      link: "https://jeanrichardson610.github.io/Learnora/",
+      tech: ["React", "TailwindCSS", "Vite"],
+    },
+    {
+      title: "Reel-lax",
+      img: "/projects/Reel-lax-project.png",
+      description:
+        "Reel-lax is a movie discovery platform that leverages The Movie Database (TMDb) API to provide users with trending movies, detailed information, and search functionalities.",
+      link: "https://reel-lax.onrender.com/",
+      tech: ["React", "TailwindCSS", "TMDB API"],
+    },
+    {
+      title: "Sagittarius",
+      img: "/projects/Sagittarius-project.png",
+      description:
+        "Sagittarius is a web-based chatbot application that emulates the functionality of Google's Gemini AI. Built with React and styled using CSS.",
+      link: "https://sagittarius-8sng.onrender.com/",
+      tech: ["React", "Google Gemini API", "Vite"],
+    },
+    {
+      title: "Summarist",
+      img: "/projects/Summarist-project.jpg",
+      description:
+        "Summarist is a web application built with Next.js that leverages OpenAI's GPT-3 technology to generate concise, human-like summaries of books across various genres.",
+      link: "https://summarist-kohl.vercel.app/",
+      tech: ["React", "Next.js", "Express", "Firebase", "TailwindCSS", "OpenAI GPT-3", "Typescript"],
+    },
+    {
+      title: "Gilded Spoon",
+      img: "/projects/Gilded-Spoon-project.jpg",
+      description:
+        "Dining redefined with every bite — Gilded Spoon is a beautifully designed, responsive restaurant landing site built to showcase cuisine, chefs, and ambiance.",
+      link: "https://jeanrichardson610.github.io/Gilded-Spoon/",
+      tech: ["HTML5", "CSS3", "Javascript"],
+    },
+    {
+      title: "Goddess",
+      img: "/projects/Goddess-project.jpg",
+      description:
+        "Goddess++ is a dynamic, responsive website designed to showcase the offerings of a premier women's fitness center. The platform highlights various services, products, and events.",
+      link: "https://jeanrichardson610.github.io/Goddess-/",
+      tech: ["HTML5", "CSS3", "Javascript"],
+    },
+  ];
+
   return (
     <motion.section
       id="projects"
@@ -35,6 +86,7 @@ export const Projects = () => {
       >
         My Projects
       </motion.h2>
+
       <motion.div
         className="project-grid"
         variants={staggerContainer}
@@ -42,210 +94,47 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{ backgroundImage: "url('/projects/Learnora-project.png')" }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Learnora</h3>
-          <p className="">
-            A modern Learning Management System (LMS) built with React, designed
-            for an intuitive and engaging learning experience. Users can browse
-            courses, view details, and navigate through a clean, responsive
-            interface.
-          </p>
-          <p>
-            <a
-              href="https://jeanrichardson610.github.io/Learnora/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>React</span>
-            <span>TailwindCSS</span>
-            <span>Vite</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{ backgroundImage: "url('/projects/Reel-lax-project.png')" }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Reel-lax</h3>
-          <p className="">
-            Reel-lax is a movie discovery platform that leverages The Movie
-            Database (TMDb) API to provide users with trending movies, detailed
-            information, and search functionalities.
-          </p>
-          <p>
-            <a
-              href="https://reel-lax.onrender.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>React</span>
-            <span>TailwindCSS</span>
-            <span>TMDB API</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{
-              backgroundImage: "url('/projects/Sagittarius-project.png')",
-            }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Sagittarius</h3>
-          <p className="">
-            Sagittarius is a web-based chatbot application that emulates the
-            functionality of Google's Gemini AI. Built with React and styled
-            using CSS.
-          </p>
-          <p>
-            <a
-              href="https://sagittarius-8sng.onrender.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>React</span>
-            <span>Google Gemini API</span>
-            <span>Vite</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{
-              backgroundImage: "url('/projects/Summarist-project.jpg')",
-            }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Summarist</h3>
-          <p className="">
-            Summarist is a web application built with Next.js that leverages OpenAI's GPT-3 technology to generate concise, human-like summaries of books across various genres. The platform aims to provide users with quick insights into books, aiding in efficient learning and decision-making. 
-          </p>
-          <p>
-            <a
-              href="https://summarist-kohl.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>React</span>
-            <span>Next.js</span>
-            <span>Express</span>
-            <span>Firebase</span>
-            <span>TailwindCSS</span>
-            <span>OpenAI GPT-3</span>
-            <span>Typescript</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{
-              backgroundImage: "url('/projects/Gilded-Spoon-project.jpg')",
-            }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Gilded Spoon</h3>
-          <p className="">
-            Dining redefined with every bite — Gilded Spoon is a beautifully designed, responsive restaurant landing site built to showcase cuisine, chefs, and ambiance. It features immersive video backgrounds, smooth animations, and a reservation form to create an engaging experience for visitors.
-          </p>
-          <p>
-            <a
-              href="https://jeanrichardson610.github.io/Gilded-Spoon/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Javascript</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{
-              backgroundImage: "url('/projects/Goddess-project.jpg')",
-            }}
-            whileHover={{ scale: 1.15, transition: { duration: 0.2 } }}
-          ></motion.div>
-          <h3 className="">Goddess</h3>
-          <p className="">
-            Goddess++ is a dynamic, responsive website designed to showcase the offerings of a premier women's fitness center. The platform highlights various services, products, and events, providing users with an engaging experience to explore and connect.
-          </p>
-          <p>
-            <a
-              href="https://jeanrichardson610.github.io/Goddess-/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-demo-link"
-            >
-              Live Demo <FontAwesomeIcon icon={faArrowRight} />
-            </a>
-          </p>
-          <div className="project-tech">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>Javascript</span>
-          </div>
-        </motion.div>
+        {projectData.map((project, idx) => (
+          <InView triggerOnce key={idx}>
+            {({ inView, ref }) => (
+              <motion.div
+                ref={ref}
+                className="project-card"
+                variants={fadeInUp}
+                initial="initial"
+                animate={inView ? "animate" : "initial"}
+                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+              >
+                <div className="project-image overflow-hidden rounded-lg">
+                  <motion.img
+                    src={project.img}
+                    alt={project.title}
+                    loading="lazy"
+                    whileHover={{ scale: 1.15 }}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-demo-link"
+                  >
+                    Live Demo <FontAwesomeIcon icon={faArrowRight} />
+                  </a>
+                </p>
+                <div className="project-tech">
+                  {project.tech.map((t, i) => (
+                    <span key={i}>{t}</span>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </InView>
+        ))}
       </motion.div>
     </motion.section>
   );

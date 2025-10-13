@@ -11,6 +11,9 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    // Scroll to the top of the page on refresh
+   window.scrollTo(0, 0);
+
     setIsLoaded(true);
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   }, []);
