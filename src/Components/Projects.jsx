@@ -23,11 +23,11 @@ export const Projects = () => {
   
   const projectData = [
     {
-      title: "Learnora",
-      img: "/projects/Learnora-project.png",
-      description: "A modern Learning Management System (LMS) built with React, designed for an intuitive and engaging learning experience. Users can browse courses, view details, and navigate through a clean, responsive interface.",
-      link: "https://jeanrichardson610.github.io/Learnora/",
-      tech: ["React", "TailwindCSS", "Vite"],
+      title: "Weather Dashboard",
+      img: "/projects/weather-dashboard.png",
+      description: "A modern, responsive weather dashboard built with React, Tailwind CSS, and Shadcn UI, leveraging TanStack Query for efficient data fetching and state management. Explore current, hourly, and daily weather data for any location, visualize live weather maps, and switch seamlessly between light and dark modes. The dashboard also features a dynamic background that changes based on the current weather conditions, providing an immersive user experience.",
+      link: "https://react-weather-dashboard-wlf9.vercel.app/",
+      tech: ["React", "TailwindCSS", "Vite", "Zod", "TanStack Query", "Shadcn UI", "OpenWeather API"],
     },
     {
       title: "Reel-lax",
@@ -51,11 +51,11 @@ export const Projects = () => {
       tech: ["React", "Next.js", "Express", "Firebase", "TailwindCSS", "OpenAI GPT-3", "Typescript"],
     },
     {
-      title: "GSAP Apple Website",
-      img: "/projects/GSAP-Macbook-Landing-Project.png",
-      description: "Apple-style website with React, Three.js, GSAP and TailwindCSS. Created 3D product scenes, scroll animations, pinned sections, and responsive design for a high-tech visual experience.",
-      link: "https://gsap-macbook-landing-page-mauve.vercel.app/",
-      tech: ["React", "Three.js", "GSAP", "TailwindCSS"],
+      title: "Venture",
+      img: "/projects/Venture-project.png",
+      description: "Venture is a dynamic single‑page experience that blends cinematic scroll‑driven transitions, full‑screen visuals, and interactive elements to guide users through a visually rich narrative. Built with HTML, CSS and JavaScript, it delivers a polished browsing journey with crisp animations, responsive layouts, and immersive content.",
+      link: "https://jeanrichardson610.github.io/Venture/",
+      tech: ["HTML5", "Flexbox", "GSAP", ,"Javascript", "ScrollTrigger", "ScrollSmoother"],
     },
     {
       title: "Goddess",
