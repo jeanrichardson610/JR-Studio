@@ -32,16 +32,16 @@ export const Projects = () => {
     {
       title: "Reel-lax",
       img: "/projects/Reel-lax-project.png",
-      description: "Reel-lax is a movie discovery platform that leverages The Movie Database (TMDb) API to provide users with trending movies, detailed information, and search functionalities.",
+      description: "Reel-lax is a movie discovery platform that leverages The Movie Database (TMDb) API to provide users with trending movies, detailed information, and search functionalities. Built with React and styled with Tailwind CSS, the app offers a sleek and responsive design, allowing users to explore movie details, watch trailers, and discover new films effortlessly.",
       link: "https://reel-lax.onrender.com/",
-      tech: ["React", "TailwindCSS", "TMDB API"],
+      tech: ["React", "TailwindCSS", "TMDB API", "Vite", "React Router DOM"],
     },
     {
-      title: "Sagittarius",
-      img: "/projects/Sagittarius-project.png",
-      description: "Sagittarius is a web-based chatbot application that emulates the functionality of Google's Gemini AI. Built with React and styled using CSS.",
-      link: "https://sagittarius-8sng.onrender.com/",
-      tech: ["React", "Google Gemini API", "Vite"],
+      title: "Skinstric AI",
+      img: "/projects/Skinstric-project.png",
+      description: "Skinstric is an interactive AI-powered facial analysis web app that allows users to upload or scan their faces to receive automated demographic predictions such as age and race. Built with React, it offers a smooth, intuitive experience with real-time image preview, permission prompts, and animated loading states.",
+      link: "https://skinstric-beta-steel.vercel.app/",
+      tech: ["React", "React Router DOM", "Framer Motion", "Flexbox"],
     },
     {
       title: "Summarist",
@@ -58,11 +58,11 @@ export const Projects = () => {
       tech: ["HTML5", "Flexbox", "GSAP", ,"Javascript", "ScrollTrigger", "ScrollSmoother"],
     },
     {
-      title: "Goddess",
-      img: "/projects/Goddess-project.jpg",
-      description: "Goddess++ is a dynamic, responsive website designed to showcase the offerings of a premier women's fitness center. The platform highlights various services, products, and events.",
-      link: "https://jeanrichardson610.github.io/Goddess-/",
-      tech: ["HTML5", "CSS3", "Javascript"],
+      title: "Learnora",
+      img: "/projects/Learnora-project.png",
+      description: "A modern Learning Management System (LMS) built with React, designed for an intuitive and engaging learning experience. Users can browse courses, view details, and navigate through a clean, responsive interface. The application features a sleek design with smooth animations, making it easy for learners to find and access educational content.",
+      link: "https://jeanrichardson610.github.io/Learnora/",
+      tech: ["React", "React Router", "TailwindCSS", "Bootstrap", "Vite"],
     },
   ];
 
