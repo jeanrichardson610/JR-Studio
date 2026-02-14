@@ -51,11 +51,11 @@ export const Projects = () => {
       tech: ["React", "Next.js", "Express", "Firebase", "TailwindCSS", "OpenAI GPT-3", "Typescript"],
     },
     {
-      title: "Venture",
-      img: "/projects/Venture-project.png",
-      description: "Venture is a dynamic single‑page experience that blends cinematic scroll‑driven transitions, full‑screen visuals, and interactive elements to guide users through a visually rich narrative. Built with HTML, CSS and JavaScript, it delivers a polished browsing journey with crisp animations, responsive layouts, and immersive content.",
-      link: "https://jeanrichardson610.github.io/Venture/",
-      tech: ["HTML5", "Flexbox", "GSAP", ,"Javascript", "ScrollTrigger", "ScrollSmoother"],
+      title: "Fitlytics",
+      img: "/projects/Fitlytics-project.png",
+      description: "A full stack fitness tracking app with AI-powered food image analysis, built with React and Strapi, styled with Tailwind CSS, and fully deployable online for free. Track your fitness journey, set goals, log your meals and workouts, and get AI insights on the foods you eat by simply uploading images!.",
+      link: "https://fitness-tracker-lac-kappa.vercel.app/",
+      tech: ["React", "TailwindCSS", "Typescript", "Strapi", "Strapi Cloud", "Google Gemini AI", "Vercel"],
     },
     {
       title: "Learnora",
