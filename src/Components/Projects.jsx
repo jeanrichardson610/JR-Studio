@@ -27,14 +27,14 @@ export const Projects = () => {
       img: "/projects/weather-dashboard.png",
       description: "A modern, responsive weather dashboard built with React, Tailwind CSS, and Shadcn UI, leveraging TanStack Query for efficient data fetching and state management. Explore current, hourly, and daily weather data for any location, visualize live weather maps, and switch seamlessly between light and dark modes. The dashboard also features a dynamic background that changes based on the current weather conditions, providing an immersive user experience.",
       link: "https://react-weather-dashboard-wlf9.vercel.app/",
-      tech: ["React", "TailwindCSS", "Vite", "Zod", "TanStack Query", "Shadcn UI", "OpenWeather API"],
+      tech: ["React", "Tailwind CSS", "Vite", "Zod", "TanStack Query", "Shadcn UI", "OpenWeather API"],
     },
     {
       title: "Reel-lax",
       img: "/projects/Reel-lax-project.png",
       description: "Reel-lax is a movie discovery platform that leverages The Movie Database (TMDb) API to provide users with trending movies, detailed information, and search functionalities. Built with React and styled with Tailwind CSS, the app offers a sleek and responsive design, allowing users to explore movie details, watch trailers, and discover new films effortlessly.",
       link: "https://reel-lax.onrender.com/",
-      tech: ["React", "TailwindCSS", "TMDB API", "Vite", "React Router DOM"],
+      tech: ["React", "Tailwind CSS", "TMDB API", "Vite", "React Router DOM"],
     },
     {
       title: "Skinstric AI",
@@ -48,21 +48,21 @@ export const Projects = () => {
       img: "/projects/Summarist-project.jpg",
       description: "Summarist is a web application built with Next.js that leverages OpenAI's GPT-3 technology to generate concise, human-like summaries of books across various genres.",
       link: "https://summarist-kohl.vercel.app/",
-      tech: ["React", "Next.js", "Express", "Firebase", "TailwindCSS", "OpenAI GPT-3", "Typescript"],
+      tech: ["React", "Next.js", "Express", "Firebase", "Tailwind CSS", "OpenAI GPT-3", "Typescript"],
     },
     {
       title: "Fitlytics",
       img: "/projects/Fitlytics-project.png",
       description: "A full stack fitness tracking app with AI-powered food image analysis, built with React and Strapi, styled with Tailwind CSS, and fully deployable online for free. Track your fitness journey, set goals, log your meals and workouts, and get AI insights on the foods you eat by simply uploading images!.",
       link: "https://fitness-tracker-lac-kappa.vercel.app/",
-      tech: ["React", "TailwindCSS", "Typescript", "Strapi", "Strapi Cloud", "Google Gemini AI", "Vercel"],
+      tech: ["React", "Tailwind CSS", "Typescript", "Strapi", "Strapi Cloud", "Google Gemini AI", "Vercel"],
     },
     {
       title: "Learnora",
       img: "/projects/Learnora-project.png",
       description: "A modern Learning Management System (LMS) built with React, designed for an intuitive and engaging learning experience. Users can browse courses, view details, and navigate through a clean, responsive interface. The application features a sleek design with smooth animations, making it easy for learners to find and access educational content.",
       link: "https://jeanrichardson610.github.io/Learnora/",
-      tech: ["React", "React Router", "TailwindCSS", "Bootstrap", "Vite"],
+      tech: ["React", "React Router", "Tailwind CSS", "Bootstrap", "Vite"],
     },
   ];
 
