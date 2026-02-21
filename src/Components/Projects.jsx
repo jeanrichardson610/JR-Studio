@@ -44,11 +44,11 @@ export const Projects = () => {
       tech: ["React", "React Router DOM", "Framer Motion", "Flexbox"],
     },
     {
-      title: "Summarist",
-      img: "/projects/Summarist-project.jpg",
-      description: "Summarist is a web application built with Next.js that leverages OpenAI's GPT-3 technology to generate concise, human-like summaries of books across various genres.",
-      link: "https://summarist-kohl.vercel.app/",
-      tech: ["React", "Next.js", "Express", "Firebase", "Tailwind CSS", "OpenAI GPT-3", "Typescript"],
+      title: "Spatia",
+      img: "/projects/Spatia-project.png",
+      description: "Spatia - AI-powered architectural visualization SaaS built with React, TypeScript, and Puter. Use AI models from Claude to Gemini to transform 2D floor plans into photorealistic 3D renders with permanent hosting and persistent metadata. This project features 2D-to-3D photorealistic rendering, serverless workers, high-performance KV storage, and a global community feed. ",
+      link: "https://puter.com/app/spatia",
+      tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Puter", "Puter.js", "Claude", "Gemini"],
     },
     {
       title: "Fitlytics",
